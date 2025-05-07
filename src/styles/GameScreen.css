@@ -1,0 +1,111 @@
+.game-screen {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  height: 100vh;
+  width: 100%;
+  padding: 1rem;
+  position: relative;
+  background: black;
+}
+
+.dialogue-box {
+  background: rgba(0, 0, 0, 0.503);
+  padding: 1rem;
+  border-radius: 12px;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.dialogue-speaker {
+  font-size: 1.1rem;
+  font-weight: bold;
+  color: #ffffff; /* Azul claro */
+  margin-bottom: 0.5rem;
+}
+
+.dialogue-text {
+  font-size: 1.25rem;
+  color: white;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.choice-button:hover {
+  background: #b0b0b0;
+  transition: background-color 0.3s ease;
+}
+.choice-button {
+  background: white;
+  color: black;
+  padding: 0.5rem 1rem;
+  border-radius: 12px;
+  text-align: left;
+  margin-top: 0.5rem;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.return-button:hover {
+  background: hsla(227, 72%, 51%, 0.805);
+  transition: background-color 0.3s ease;
+}
+.return-button {
+  background: hsl(227, 72%, 51%);
+  color: white;
+  padding: 0.75rem 1.5rem;
+  border-radius: 8px;
+  font-size: 1.2rem;
+  margin-top: 1rem;
+  border: none;
+  cursor: pointer;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Estilo para la flecha animada */
+.arrow {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 0.5rem;
+  cursor: pointer;
+}
+
+.arrow-icon {
+  font-size: 1.8rem;
+  color: white;
+  user-select: none;
+}
+
+.dialogue-text {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+  font-size: 1.2rem;
+  line-height: 1.5;
+}
+
+.arrow-inline {
+  font-size: 1.5rem;
+  cursor: pointer;
+  color: white;
+  user-select: none;
+}
+
+@keyframes moveArrow {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(10px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
