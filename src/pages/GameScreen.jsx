@@ -73,7 +73,9 @@ export default function GameScreen({ initialScene = 'scene1', onMenuClick }) {
         exit={{ opacity: 0 }}
         transition={{ duration: 0.5 }}
         style={{
-          backgroundImage: background ? `url(/backgrounds/${background}.png)` : 'none',
+          backgroundImage: background
+          ? `url(${import.meta.env.BASE_URL}backgrounds/${background}.png)`
+          : 'none',
           backgroundSize: 'cover',
           backgroundPosition: 'center'
         }}
